@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: orange; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background-color: white;
+      width: 960px;
+      line-height: 200px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid orange ; 
+    }
+
+    header, footer {
+      background-color: #fff;
+      text-align: left;
+      padding: 10px;
+      border: 1px solid orange;
+      font-weight: bold;
+    }
+
+    .content {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      border-left: 1px solid orange;
+      border-right: 1px solid orange;
+    }
+
+    .sidebar-a, .sidebar-b {
+      width: 20%;
+      padding: 10px;
+      border-right: 1px solid orange;
+      box-sizing: border-box;
+      font-weight: bold;
+        }
+
+      .sidebar {
+      width: 20%;
+      padding: 10px;
+      box-sizing: border-box;
+      font-weight: bold;
+      border-right: 1px solid orange;
+        }
+
+      .sidebar:first-child {
+      border-left: 1px solid orange;
+        }
+
+      .sidebar:last-child {
+      border-right: none;
+      border-left: 1px solid orange;
+        }
+
+        .main {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: left;
+      font-weight: bold;
+        }
+
+        footer {
+      border-top: 1px solid orange;
+      text-align: left;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <header>Header</header>
+
+        <div class="content">
+      <div class="sidebar">Sidebar A</div>
+      <div class="main">Main content</div>
+      <div class="sidebar">Sidebar B</div>
+    </div>
+
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
