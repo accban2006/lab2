@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Flexbox Layout</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: orange;
+    }
+
+    .container {
+      width: 960px;
+      line-height: 200px;               
+     display: flex;
+      flex-direction: column;
+      border: 1px solid orange; 
+    }
+
+
+    header, footer {
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      text-align: left;
+      padding: 20px;
+      border: 1px solid orange;
+      font-weight: bold;
+    }
+
+    .content {  
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      border-left: 1px solid orange;
+      border-right: 1px solid orange;         
+    }
+
+    .sidebar {
+      text-align: left;
+      justify-content:
+      width: 200px;            
+      background: hsl(0, 0%, 100%);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+     footer {
+      border-top: 1px solid #d4b46a;
+      text-align: left;
+    }
+    
+    .sidebar-b {
+      border-right: none;
+      border-left: 1px solid #d4b46a;
+    }
+
+    .main {
+      flex: 1;                 
+      background: #ffffff;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+
+    <div class="content">
+      <div class="sidebar">Sidebar A</div>
+      <div class="main">Main content</div>
+      <div class="sidebar">Sidebar B</div>
+    </div>
+
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

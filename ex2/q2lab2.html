@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 40px;
+    }
+   h2 {
+      color: #86af49
+    }
+</style>
+</head>
+<body>
+<img src="iu.png" alt="University Logo" style="width:120px; display:block; align-items: left;">
+<h2><b>Survey</b></h2>
+<p>If you have a moment, we'd appreciate it if you would fill out  this survey</p>
+<h2>Your Information</h2>
+Last Name: <input type="text" id="LName"><br>
+First Name: <input  type="text" id="FName"><br>
+Email: <input type="text" id="email"><br>
+Date of birth: <input type="datetime" id="DateOfBirth"><br>
+<H2><b>How this you heard about us?</b></H2>
+<div class="radio-group">
+<label>
+  <input type="radio" name="How" value="Search engine">
+  Search engine
+</label>
+<label>
+  <input type="radio" name="How" value="Word of mouth">
+  Word of mouth
+</label>
+<label>
+  <input type="radio" name="How" value="Social Media">
+  Social Media
+</label>
+<label>
+  <input type="radio" name="How" value="Other">
+  Other
+</label>
+</div>
+<br>
+<h2>Would you like to receive announcements about new CDs and special offers?</h2>
+<INPUT TYPE="checkbox"
+NAME="Yes"
+VALUE="Yes, i'd like that">Yes, i'd like that
+<BR>
+<INPUT TYPE="checkbox"
+NAME="accountmentpls"
+ VALUE="Yes, pls send me email accountment">Yes, pls send me email accountment
+ <BR>
+<H2></H2>
+<SELECT>
+<OPTION VALUE="Email or Postal mail">Email or Postal mail
+<OPTION VALUE="Email only">Email or Postal mail
+<OPTION VALUE="Postal mail">Postal mail
+</SELECT>
+<h2></h2>
+<input type="button" value="Submit" onclick>
+</body>
+</html>
